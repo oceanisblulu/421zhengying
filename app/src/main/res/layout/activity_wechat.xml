@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="#aaa"
+        android:layout_weight="1"></LinearLayout>
+    <RadioGroup
+        android:id="@+id/rg_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_chat"
+            android:text="微信"
+            android:textSize="20sp"
+            android:textColor="@drawable/selector_textcolor"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rb_moment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_moment"
+            android:text="朋友圈"
+            android:textSize="20sp"
+            android:textColor="@drawable/selector_textcolor"
+            android:textStyle="bold"
+            android:gravity="center" />
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_mine"
+            android:text="我"
+            android:textSize="20sp"
+            android:textColor="@drawable/selector_textcolor"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </RadioGroup>
+</LinearLayout>
